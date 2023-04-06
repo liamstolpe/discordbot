@@ -1,7 +1,7 @@
 # bot.py
 import os
 import random
-import RockPaperScissors as rps
+import src.RockPaperScissors as rps
 import discord
 from dotenv import load_dotenv
 
