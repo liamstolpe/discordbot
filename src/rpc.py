@@ -1,6 +1,5 @@
 from main import client
 import random
-import RockPaperScissors as rps
 
 # Play the classic game of Rock, Paper, Scissors
 
@@ -46,7 +45,7 @@ async def on_message(self, message):
     if message.content == '!rps':
         player = message.author
         await message.channel.send("Let's play rock paper scissors.  The computer will randomly pick an option.", '\n')
-        game = rps.RockPaperScissors()
+        game = RockPaperScissors()
 
         while True:
             
