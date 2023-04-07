@@ -1,3 +1,2 @@
 Pair bot with test server
 Test bot
-Move out rock paper scissor login from main.py
