@@ -4,13 +4,13 @@ import random
 # Play the classic game of Rock, Paper, Scissors
 
 def convert(s):
-    if s == ('r' or 'rock' or 'R' or 'Rock'):
+    if s == 'r' or 'rock' or 'R' or 'Rock':
         return 'Rock'
-    elif s == ('p' or 'paper' or 'P' or 'Paper'):
+    elif s == 'p' or 'paper' or 'P' or 'Paper':
         return 'Paper'
-    elif s == ('s' or 'scissors' or 'S' or 'Scissors'):
+    elif s == 's' or 'scissors' or 'S' or 'Scissors':
         return 'Scissors'
-    elif s == ('q' or 'quit' or 'Q' or 'Quit'):
+    elif s == 'q' or 'quit' or 'Q' or 'Quit':
         return 'q'
     
     else: return 'e'
