@@ -2,10 +2,17 @@
 import os
 import random
 import discord
+import json
 from dotenv import load_dotenv
 
+# Opens the file in read-only mode and assigns the contents to the variable cfg to be accessed further down
+with open('config.json', 'r') as cfg:
+  # Deserialize the JSON data (essentially turning it into a Python dictionary object so we can use it in our code) 
+  data = json.load(cfg) 
+# Where you'd normally log in, replace your token string with: data["token"]
+
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv(data["token"])
 
 client = discord.Client()
 
